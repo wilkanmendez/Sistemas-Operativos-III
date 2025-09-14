@@ -1,0 +1,13 @@
+1.8 Configurando Permisos  (apoyar con ejemplo practico)
+
+ls -l      # Para ver los permisos
+chmod 754 archivo.txt     # Para asignarle permisos a un archivo (usuarios 7 = rwx, grupos 5 = r-x y otros 4 r--)
+ls -l archivo.txt    # Ahi verificamos si se asignaron
+chmod u+x archivo.txt    # Da permiso de ejecución al usuario
+chmod g-w archivo.txt    # Quita escritura al grupo
+chmod o+r archivo.txt    # Da lectura a otros
+chmod a-x archivo.txt    # Quita ejecución a todos
+sudo chown will archivo.txt      # Cambiar propietarios
+sudo chgrp desarrolladores archivo.txt      # Cambiar grupos
+sudo chown will:desarrolladores archivo.txt       # Cambiar ambos tanto grupo como usuario
+ls -l archivo.txt       # Para verificar si se hicieron los cambios
