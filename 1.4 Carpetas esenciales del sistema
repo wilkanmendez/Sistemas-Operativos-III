@@ -1,0 +1,24 @@
+1.4 Carpetas esenciales del sistema  (apoyar con ejemplo practico)
+
+ls /bin | head -10
+/bin/ls      # Esto ejecuta ls directamente desde el directorio /bin
+ls /etc | head -10
+cat /etc/hostname   # Muestra el nombre de la maquina
+ls /dev | head -10
+ls -l /dev/sda      # Es para ver el disco principal
+ls /var | head -10
+ls /var/log        # Muestra los ultimos regitros del sistema
+tail -n 5 /var/log/messages    
+cd /tmp
+echo "archivo temporal" > prueba.txt    # Este archivo se borrara al reiciar debido a que se creo en el directorio de temporales.
+ls
+ls /lib | head -10
+ldd /bin/ls     # Esto mostrara que librerias usa el comando ls en este ejemplo es /bin
+ls /home
+cd /home/$USER    # Te dirige a tu carpeta personal
+pwd        # Muestra tu carpetal personal
+sudo ls /root     # Esto es solo accesible con permisos de administrador
+ls /boot   # Muestras los archivos necesarios para arrancar el kernel
+uname -r
+ls /boot | grep $(uname -r)    # muestra el kernel que estas usando
+ls /opt    # Aqui veras que app tienes descargadas como por ejemplo Google Chrome
