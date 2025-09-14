@@ -1,0 +1,18 @@
+1.5 Configurando Redes  (apoyar con ejemplo practico)
+
+ip addr show    # Para ver la direccion de IP
+sudo dnf install net-tools -y     # Para instalar el Ifconfig
+ifconfig     # Para ver toda la configuracion de red
+sudo ip addr add 192.168.1.200/24 dev ens33      # Es para agregar una direccion de ip nueva para cambiar la anterior
+sudo ip addr del 192.168.1.100/24 dev ens33      # Es para eliminar la anterio direccion de IP
+nmcli con show       # Esto es para ver la conexiones de red
+
+sudo nmcli con mod ens33 ipv4.addresses 192.168.1.200/24
+sudo nmcli con mod ens33 ipv4.gateway 192.168.1.1
+sudo nmcli con mod ens33 ipv4.dns 8.8.8.8
+sudo nmcli con mod ens33 ipv4.method manual
+sudo nmcli con up ens33                         # Y con estas lineas de comando le asignas una ip fija
+
+(Para pobar la conexion)
+ping -c 4 8.8.8.8    # Hacer ping a Google DNS
+ping -c 4 google.com # Probar resolución de nombres
