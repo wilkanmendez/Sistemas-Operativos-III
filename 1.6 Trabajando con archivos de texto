@@ -1,0 +1,20 @@
+1.6 Trabajando con archivos de texto  (apoyar con ejemplo practico)
+
+vi archivo1.txt     # Aqui entra al editor de texto vi
+Hola Red Hat
+Estamos aprendiendo vi        # Aqui puse esto como ejemplo dentro del editor
+Esc   # para salir
+:wq   # Para guardar y salir
+
+vim notas.txt       # Entras al editor de texto VIM que es una version mas actualizada y mejorada de vi
+Aprendiendo VIM en Red Hat
+Es más potente que vi    # Use esto como ejemplo y lo escribi en el editor
+Esc   # Para salir
+:wq   # Par guardar y salir
+
+nano documento.txt    # Esto es para entrar al editor nano que es mas facil de usar
+Nano es fácil de usar
+Editamos texto en Red Hat     # Ejemplo que use en nano
+CTRL + o + enter    # para guardar
+CTRL + x       # Para salir
+CTRL + w       # Para buscar alguna palabra en el texto
