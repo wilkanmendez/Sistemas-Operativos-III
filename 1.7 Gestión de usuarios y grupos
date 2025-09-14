@@ -1,0 +1,16 @@
+1.7 Gestión de usuarios y grupos  (apoyar con ejemplo practico)
+
+sudo useradd will      # Crear un usuario
+sudo passwd will      # Ponerle una contraseña
+sudo groupadd desarrolladores      # Crear un grupo
+sudo usermod -aG desarrolladores will          # Agregar al usuario al grupo
+groups will      # Verificar si esta dentro del grupo
+sudo usermod -aG wheel juan        # Darle privilegios de Root
+su - will       # Para ingresar como will
+sudo whoami     # verificar quien soy
+sudo userdel will       # Eliminar usuario
+sudo userdel -r juan      # Eliminar con todo y carpeta
+sudo groupdel desarrolladores        # Eliminar grupo
+cat /etc/passwd | cut -d: -f1 | less       # Ver usuarios del sistema
+cat /etc/group | cut -d: -f1 | less        # Veer grupos del sistema
+id will      # Veriificar el ID del usuario
